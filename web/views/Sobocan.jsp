@@ -1,20 +1,20 @@
 <%--
-&lt;%&ndash;
   Created by IntelliJ IDEA.
   User: ilia
-  Date: 26.03.18
-  Time: 17:12
+  Date: 24.04.18
+  Time: 9:49
   To change this template use File | Settings | File Templates.
-&ndash;%&gt;
-<%@ page contentType="text/html;charset=UTF-8" language="JavaScript" %>
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Sobocan</title>
+    <title>Sobocan Game</title>
 </head>
 <body>
-<canvas>  id ="my Canvas" width ="420" height = "320"</canvas>
 
-        <script>
+<canvas id="myCanvas" width = "480" height="320"></canvas>
+
+<script>
     //JS code goes here
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
@@ -40,7 +40,7 @@
     var brickOffsetLeft = 30;
     var score = 0;
 
-    var lives = 3;
+    var lives = 1;
 
     var bricks = [];
     for(c=0; c<brickColumnCount; c++) {
@@ -191,4 +191,3 @@
 
 </body>
 </html>
---%>
